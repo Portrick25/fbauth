@@ -89,6 +89,9 @@ function FBsignIn(){
         var user = result.user;
 
         console.log(user);
+        var userEmail = document.querySelector('#user-email');
+        
+        userEmail.innerHTML = user.email;
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
