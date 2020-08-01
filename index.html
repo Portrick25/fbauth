@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+     
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        
+
+</head>
+<body>
+    <div class="mobile">
+        <div class="nav-bg">
+            <img class="mobile-bg" src="../IMAGES/background.jpg" alt="">
+            <img class="mobile-logo" src="../IMAGES/logo.png" alt="">
+            <h3 class="heading"> SAMCHIKITSA </h3>
+            <strong class="quote">Serving Complete Health & Well Being</strong>
+            <button class="fa fa-bars" id="menubar" onclick="myfunction()"></button>
+        </div>
+        <div id="services" style="display: block;">
+            <h2 class="services-heading">Login</h2>
+            <div class="services-mobile">
+            <div class="grid-container">
+            
+                <div id="formcontainer">
+                    <input type="email" name="email" id="email" placeholder="Enter Valid Email ID" required><br>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
+                    <button onclick="signIn()" id="logIn">Login</button>
+                </div>
+                <div id="formcontainer">
+                    <div id="header">OR</div>
+                    
+                        
+                        <div class="col s12 m6 offset-m3 center-align">
+                            <button onclick="googleSignIn()" class="oauth-container btn darken-4 white black-text" style="text-transform:none" id="">
+                            <div class="left">
+                                <img width="25px" style="margin-top:7px; margin-right:8px" alt="Google sign-in" 
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                            </div>
+                                <span> Login with Google</span>
+                            </button>
+                        </div>
+                    </button><br>
+                </div>
+                <div id="formcontainer">
+                    <button onclick="FBsignIn();" id="fb"> Sign In With Facebook</button>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+        <div id="menubar-content"> 
+            <div class="dropdown-content">
+                <button class="dc-style" disabled>LogIn</button>
+                <button class="dc-style" >SignUp</button>
+                <button class="dc-style">News & Feeds</button>
+                <button class="dc-style">upcoming services</button>
+                <button class="dc-style" onclick="myfunction1()">contact us</button>
+    
+            </div>
+        </div>
+    
+        <div id="contact-menubar-content"> 
+            <div class="dropdown-content">
+                <div class="dc-style"><a class= "fa fa-linkedin" href="" target = "blank" ><span>  |  </span> Linkedin</a></div>
+                <div class="dc-style"><a class= "fa fa-instagram" href="" target = "blank" ><span>  |  </span>Instagram</a></div>
+                <div class="dc-style"><a class= "fa fa-facebook" href="" target = "blank" ><span>  |  </span>Facebook</a></div>
+                <div class="dc-style"><a class= "fa fa-envelope" href="" target = "blank" ><span>  |  </span>Gmail</a></div>
+                <div class="dc-style"><a class= "fa fa-phone" href="" target = "blank" ><span>  |  </span>Phone</a></div>
+                <button class="dc-style" onclick="myfunction()">BACK</button>
+    
+            </div>
+        </div>
+    </div>
+    <script src="../JS/app.js"></script>
+    <script>
+        function myfunction(){
+            var a = document.getElementById("menubar-content");
+            var b = document.getElementById("services");
+            var c = document.getElementById("contact-menubar-content")
+            if(a.style.display == "none"){
+                a.style.display = "block";
+                b.style.display="none";
+                c.style.display = "none"
+            }
+            else{
+                a.style.display = "none";
+                b.style.display = "block";
+            }
+    
+        }
+    
+        function myfunction1(){
+            var a = document.getElementById("contact-menubar-content");
+            var b = document.getElementById("services");
+            var c = document.getElementById("menubar-content")
+        
+            if(a.style.display == "none"){
+                a.style.display = "block";
+                b.style.display="none";
+                c.style.display="none";
+            }
+            else{
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display="block";
+            }
+    
+        }
+    </script>
+</body>
+</html>

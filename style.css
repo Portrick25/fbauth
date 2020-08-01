@@ -1,0 +1,679 @@
+*{
+    margin: 0;
+}
+@media only screen and (max-width: 450px){
+
+.PC{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.mobile-bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity:0.6 ;
+    z-index:-1 ;
+    
+}
+.nav-bg{
+    background-color: teal;
+    position: absolute;
+    width: 100vw;
+    height: 18vh;
+    border-bottom: solid white 1px;
+    z-index: 0;
+
+}
+
+#menubar-content{
+    display:none;
+}
+
+.mobile-logo{
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    width: 2cm;
+    padding: 1em;
+    z-index: 1;
+}
+
+
+.heading{
+    font-size: 1.7em;
+    transform: translate(-50%,-50%);
+    color: tomato;
+    position: absolute;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    left: 50%;
+    top: 7vh;z-index: 1;
+}
+
+.quote{
+    font-size:0.6em;
+    transform: translate(-50%,-50%);
+    color:white;
+    background-color: rgb(11, 11, 90);
+    padding:1mm .1cm 1mm .1cm;
+    position: absolute;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    left: 50%;
+    top: 11vh;
+    font-family:'Barlow Semi Condensed', sans-serif; ;
+    z-index: 1;
+}
+
+#menubar{
+    color: white;
+    position: absolute;
+    font-size: 1.6em;
+    top: 3vh;
+    right: 0.2%;
+    background-color: transparent;
+    border: solid white 1px;
+    margin: 1em;
+    border-radius: 4px;
+}
+
+.services-heading{
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    top: 20vh;
+    width: 96%;
+    left: 2%;
+    font-family: 'Barlow Semi Condensed', sans-serif ;
+    z-index: auto;
+}
+
+.services-mobile{
+    z-index: 0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 70%;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+.services-mobile a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: monospace;
+}
+
+.hom-tel-mobile, .book-app-mobile, .dauw-mobile, .book-lab-mobile, .doct-at-door-mobile, .yoga-mobile, .gym-mobile{
+    width: 80vw;
+    border: solid white 1px;
+    padding: 1em 0 1em 0em;
+    margin: 1em;
+
+}
+
+.dropdown-content{
+    position: absolute;
+    top: 18vh;
+    width: 100%;
+    background-color:teal ;
+    opacity: 0.6;    
+}
+.dc-style{
+    border: solid white 1px;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    
+}
+.dc-style a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+.dropdown-content button{
+    color: white;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+#contact-menubar-content{
+    display: none;
+}
+
+
+/* for htc.html */
+
+.allform{
+    position: absolute;
+    top: 100%;
+    width: 98vw;
+    padding: 0;
+    background-color: transparent;
+}
+.zoom_form{
+    width: 90vw;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 2%;
+    margin-top:1em ;
+    margin-bottom: 0.5em;
+    border-radius: 20px;
+}
+.allform h2,.allform1 h2{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.allform1{
+    position: absolute;
+    top: 125%;
+    width: 98vw;
+    padding: 0;
+    background-color: transparent;
+}
+.allform1 label, .allform2 label{
+    text-decoration: none;
+    font-size: 1em;
+}
+.allform2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 80%;
+    left: 50%;
+    width: 98vw;
+    padding: 0;
+    background-color: transparent;
+}
+.allform2 h2{
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    top: -10%;
+    width: 96%;
+    left: 2%;
+    font-family: 'Barlow Semi Condensed', sans-serif ;
+    z-index: auto;
+}
+}
+
+
+@media only screen and (min-width: 450px) {
+
+.PC{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.mobile-bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity:0.6 ;
+    z-index:-1 ;
+    
+}
+.nav-bg{
+    background-color: teal;
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    border-bottom: solid white 1px;
+    z-index: 0;
+
+}
+
+#menubar-content{
+    display:none;
+}
+
+.mobile-logo{
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    width: 2cm;
+    padding: 1em;
+    z-index: 1;
+}
+
+
+.heading{
+    font-size: 2.6em;
+    transform: translate(-50%,-50%);
+    color: tomato;
+    position: absolute;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    left: 50%;
+    top: 10vh;z-index: 1;
+}
+
+.quote{
+    font-size:0.9em;
+    transform: translate(-50%,-50%);
+    color:white;
+    background-color: rgb(11, 11, 90);
+    padding:1mm .1cm 1mm .1cm;
+    position: absolute;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    left: 50%;
+    top: 20vh;
+    font-family:'Barlow Semi Condensed', sans-serif; ;
+    z-index: 1;
+}
+
+#menubar{
+    color: white;
+    position: absolute;
+    font-size: 1.6em;
+    top: 3vh;
+    right: 0.2%;
+    background-color: transparent;
+    border: solid white 1px;
+    margin: 1em;
+    border-radius: 4px;
+}
+
+.services-heading{
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    top: 40vh;
+    width: 96%;
+    left: 2%;
+    font-family: 'Barlow Semi Condensed', sans-serif ;
+    z-index: auto;
+}
+
+.services-mobile{
+    z-index: 0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 130%;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+.services-mobile a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: monospace;
+}
+
+.hom-tel-mobile, .book-app-mobile, .dauw-mobile, .book-lab-mobile, .doct-at-door-mobile, .yoga-mobile, .gym-mobile{
+    width: 80vw;
+    border: solid white 1px;
+    padding: 1em 0 1em 0em;
+    margin: 1em;
+
+}
+
+.dropdown-content{
+    position: absolute;
+    top: 30vh;
+    right: 0.001%;
+    width: 70%;
+    background-color:teal ;
+    opacity: 0.6;    
+}
+.dc-style{
+    border: solid white 1px;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    
+}
+.dc-style a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+.dropdown-content button{
+    color: white;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+#contact-menubar-content{
+    display: none;
+}
+
+
+/* for htc.html */
+
+.allform{
+    position: absolute;
+    top: 190%;
+    width: 98vw;
+    padding: 0;
+    background-color: transparent;
+}
+.zoom_form{
+    width: 90vw;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 2%;
+    margin-top:1em ;
+    margin-bottom: 0.5em;
+    border-radius: 20px;
+}
+.allform h2,.allform1 h2{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.allform1{
+    position: absolute;
+    top: 220%;
+    width: 98vw;
+    padding: 0;
+    background-color: transparent;
+}
+.allform1 label, .allform2 label{
+    text-decoration: none;
+    font-size: 1em;
+}
+.allform2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 150%;
+    left: 50%;
+    width: 98vw;
+    padding: 0;
+    background-color: transparent;
+}
+.allform2 h2{
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    top: -10%;
+    width: 96%;
+    left: 2%;
+    font-family: 'Barlow Semi Condensed', sans-serif ;
+    z-index: auto;
+}
+
+}
+
+
+@media only screen and (min-width: 825px) {
+
+    .mobile{
+        display: block;
+    }
+    
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .mobile-bg{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        margin-top:0vh ;
+        opacity:0.7  ;
+        z-index:-1 ;
+        
+    }
+    .nav-bg{
+        background-color: rgb(6, 110, 110);
+        position: relative;
+        width: 100vw;
+        height: 30vh;
+        border-bottom: solid white 1px;
+        z-index: 0;
+    
+    }
+
+  
+    
+    #menubar-content{
+        display:none;
+    }
+    
+    .mobile-logo{
+        opacity: 1;
+        z-index: 1;
+        position: absolute;
+        width: 4cm;
+        padding: 1em;
+        z-index: 1;
+    }
+    
+    
+    .heading{
+        font-size: 4em;
+        transform: translate(-50%,-50%);
+        color: tomato;
+        position: absolute;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        left: 50%;
+        top: 12.5vh;z-index: 1;
+    }
+    
+    .quote{
+        font-size:1.45em;
+        transform: translate(-50%,-50%);
+        color:white;
+        background-color: rgb(11, 11, 90);
+        padding:1mm .1cm 1mm .1cm;
+        position: absolute;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        left: 50%;
+        top: 20vh;
+        font-family:'Barlow Semi Condensed', sans-serif; ;
+        z-index: 1;
+    }
+    
+    #menubar{
+        color: white;
+        position: absolute;
+        font-size: 4em;
+        top: 0.1vh;
+        right: 0.2%;
+        background-color: transparent;
+        border: solid white 1px;
+        margin: 1em;
+        border-radius: 10px;
+    }
+    #services{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+    }
+    .services-heading{
+        position: relative;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        width: 96%;
+        font-size: 3em;
+        margin-top: -35vw;
+        font-family: 'Barlow Semi Condensed', sans-serif ;
+        z-index: 0;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+    #formcontainer{
+        width: 30vw;
+        text-align: center;
+        position: relative;
+        padding: 1%;
+        background-color: white;
+        margin: 1%;
+    }
+    #formcontainer input{
+        width: 25vw;
+        font-size: 1.4em;
+        margin-top: 1em;
+        padding-top: 0.2cm;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: solid black 1px;
+    }
+
+    #formcontainer button{
+        width: 15vw;
+        font-size: 1.4em;
+        margin:1em;
+        padding-top: 0.2cm;
+        padding: 2mm;
+        border:solid 1px;
+        color: white;
+        background-color: rgb(79, 173, 250);
+    }
+    
+    .services-mobile{
+        z-index: 0;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 95%;
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+    }
+    .services-mobile a{
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        font-family: monospace;
+    }
+    
+    .hom-tel-mobile, .book-app-mobile, .dauw-mobile, .book-lab-mobile, .doct-at-door-mobile, .yoga-mobile, .gym-mobile{
+        width: 40vw;
+        border: solid white 1px;
+        padding: 1em 0 1em 0em;
+        margin: 1em;
+    
+    }
+    .hom-tel-mobile:hover, .book-app-mobile:hover, .dauw-mobile:hover, .book-lab-mobile:hover, .doct-at-door-mobile:hover, .yoga-mobile:hover, .gym-mobile:hover{
+        background-color: rgba(0, 128, 128, 0.651);
+    }
+    
+    .dropdown-content{
+        position: absolute;
+        top: 30vh;
+        right: 0.001%;
+        width: 40%;
+        background-color:teal ;
+        opacity: 0.6;    
+    }
+    .dc-style{
+        border: solid white 1px;
+        width: 100%;
+        background-color: transparent;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        
+    }
+    .dropdown-content button:hover{
+        background-color: rgb(0, 128, 128);
+        
+    }
+    .dc-style a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.4em;
+    }
+    .dropdown-content button{
+        color: white;
+        font-size: 1.2em;
+        text-transform: capitalize;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+    }
+    #contact-menubar-content{
+        display: none;
+    }
+    
+    
+    /* for htc.html */
+    
+    .allform{
+        display: grid;
+        grid-template-columns: auto;
+        position: absolute;
+        top: 120%;
+        width: 70vw;
+        padding: 0;
+        background-color: transparent;
+    }
+    .zoom_form{
+        width: 60vw;
+        padding: 2%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        margin-left: 2%;
+        margin-top:1em ;
+        margin-bottom: 0.5em;
+        border-radius: 20px;
+    }
+    .allform h2,.allform1 h2{
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .allform1{
+        position: absolute;
+        top: 140%;
+        width: 70vw;
+        padding: 0;
+        background-color: transparent;
+    }
+    .allform1 label, .allform2 label{
+        text-decoration: none;
+        font-size: 1em;
+    }
+    .allform2{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 100%;
+        left: 50%;
+        width: 70vw;
+        padding: 0;
+        background-color: transparent;
+    }
+    .allform2 h2{
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 2.3em;
+        color: white;
+        text-align: center;
+        top: -10%;
+        width: 96%;
+        left: 2%;
+        font-family: 'Barlow Semi Condensed', sans-serif ;
+        z-index: auto;
+    }
+    
+    }
