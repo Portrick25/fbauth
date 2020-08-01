@@ -522,12 +522,12 @@ body{
         grid-template-columns: auto auto auto ;
     }
     #formcontainer{
-        width: 30vw;
+        width: 28vw;
         text-align: center;
         position: relative;
         padding: 1%;
         background-color: white;
-        margin: 1%;
+        margin-right: 1%;
     }
     #formcontainer input{
         width: 25vw;
